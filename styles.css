@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+.page {
+    margin: auto;
+    width: 1440px;
+    min-width: 375px;
+    height: 100%;
+    background-image: url("./images/pattern-background-desktop.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 350px;
+    max-height: 100%;
+    background-color: white;
+    border-radius: 22px;
+    margin: 30px;
+}
+.card > .image {
+    background-image: url(./images/illustration-hero.svg);
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+.Info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+.Info > h1 {
+    color: hsl(223, 47%, 23%);
+}
+.Info > P {
+    font-size: 16PX;
+    color:  hsl(224, 23%, 55%);
+}
+.Info > .plan {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:space-around;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.plan > img {
+    border-radius: 50%;
+    margin-left: -10px;
+}
+.plan > .plan-price {
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.plan-price > .bigFont {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.plan-price > .smallFont {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.plan > a {
+    margin-right: -10px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700
+}
+.plan > a:active {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.Info > button {
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.Info > button:active {
+    background-color: hsl(224, 23%, 55%);
+}
+.Info > a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.Info > a:active {
+    color: hsl(223, 47%, 23%);
+}
+.attribution { 
+    font-size: 11px; 
+    width: 100%;
+    text-align:center;
+    line-height: 1.3rem;
+}
+.attribution a { 
+    color: hsl(224, 71%, 36%); 
+    font-weight: 700;
+    text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+    .page {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+}
